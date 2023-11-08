@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, rgb(191, 220, 217) 40%, rgb(245, 220, 187) 60%);
+  font-family: Arial, sans-serif;
+}
+
+h4 {
+  margin: 0 auto;
+  text-align: center;
+  color:rgb(14, 37, 29)
+}
+
+nav {
+  text-align: center;
+  font-size: 2em;
+  background: linear-gradient(45deg, rgb(25, 118, 118) 40%, rgb(217, 144, 9) 60%);
+  color: white;
+  padding: 30px;
+}
+
+nav label {
+  margin-left: 10px;
+}
+
+#info-display {
+  color:rgb(108, 163, 145);
+  margin-top: 20px;
+}
+
+#x-level-graph {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  background: transparent; 
+  margin-top: 20px; 
+}
+
+.h3{
+  color:rgb(33, 91, 72)
+}

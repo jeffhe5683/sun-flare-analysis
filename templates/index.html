@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Flare Data 2018-2023</title>
+
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Title -->
+    <nav>
+        <h1>Solar Flare Data 2018-2023</h1>
+    </nav>
+
+    <!-- Line chart for the change in the number of solar flare events each year -->
+    <div id="line-chart"></div>
+
+    <!-- Bar chart for the change in the number of solar flare events each month -->
+    <div id="bar-chart"></div>
+
+    <!-- Bar chart for the amount of each year's X level events -->
+    <div id="x-level-pie"></div>
+
+    <!-- Bootstrap row for layout -->
+    <div class="row">
+
+        <!-- Dropdown box and Info display -->
+        <div class="col-md-6">
+            <div class="form-row mt-3">
+                <div class="col-md-12">
+                    <label for="year" class="h3">Select a Year:</label>
+                </div>
+                <div class="col-md-12">
+                    <select id="yearDropdown" class="form-control">
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info display -->
+        <div class="col-md-6">
+            <div id="info-display" class="mt-4"></div>
+        </div>
+    </div>
+    <!-- End of Bootstrap row -->
+
+    <!-- Yearly bar chart -->
+    <div id="yearly-bar" class="mt-4"></div>
+
+    <!-- Containers for yearly visualizations -->
+    <div class="modal__item" style="position: relative;">
+        <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2022/03/the_sun_in_high_resolution/24010613-1-eng-GB/The_Sun_in_high_resolution_pillars.jpg"
+            alt="The Sun in high resolution" style="width: 45%; height: auto;" class="map-image">
+        <div id="map" style="position: absolute; top: 0; left: 0; width: 45%; height: auto;"></div>
+        <div id="info-display" style="position: absolute; bottom: 0; left: 0; width: 45%;"></div>
+    </div>
+
+    <!-- Yearly pie chart -->
+    <div id="pie-chart" class="mt-4"></div>
+
+    <!-- X Level Solar Flare Events -->
+    <hr>
+    <h4 class="container mt-4">X Level Solar Flare Events</h4>
+    <hr>
+    <div id="x-level-graph" class="container"></div>
+
+    <!-- JavaScript file -->
+    <script src="../static/js/logic5.js"></script>
+    <script src="../static/js/logic1.js"></script>
+    <script src="../static/js/logic.js"></script>
+</body>
+
+</html>
